@@ -1,4 +1,4 @@
 <?php 
-echo("Hello PHP World"); 
+echo("Hello New PHP World"); 
 echo phpversion();
 ?>
