@@ -3,9 +3,6 @@
 
 name: Build and deploy PHP app to Azure Web App - web-convo1
 
-env:
-  ACTIONS_RUNNER_DEBUG: true
-
 on:
   push:
     branches:
@@ -72,6 +69,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: "staging"
+          app-name: "web-convo1"
           slot-name: "staging"
           package: .
