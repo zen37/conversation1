@@ -69,6 +69,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: "web-convo1"
+          app-name: "staging"
           slot-name: "staging"
           package: .
