@@ -1,6 +1,15 @@
 <?php
 session_start();
+
+echo 'Welcome to page authenticate';
+$_SESSION['favcolor'] = 'green';
+$_SESSION['animal'] = 'cat';
+$_SESSION['time'] = time();
+echo '<br /><a href="page2.php">page 2</a>';
+// Or pass along the session ID if needed
 // Change this to your connection info.
+
+/*
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'root';
 $DATABASE_PASS = '';
@@ -12,4 +21,5 @@ if ( mysqli_connect_errno() ) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 echo "Connected successfully";
+*/
 ?>
