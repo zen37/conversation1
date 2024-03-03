@@ -1,7 +1,9 @@
 <?php
+ini_set('display_errors', TRUE);
+
 session_start();
 
-echo 'Welcome to page authenticate 2';
+echo 'Welcome to page authenticate 3';
 
 // Or pass along the session ID if needed
 // Change this to your connection info.
@@ -11,7 +13,6 @@ $DATABASE_USER = 'root';
 $DATABASE_PASS = '';
 $DATABASE_NAME = 'phplogin';
 
-echo $DATABASE_HOST;
 
 // Try and connect using the info above.
 $conn = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
