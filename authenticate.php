@@ -6,7 +6,7 @@ ini_set('display_errors', TRUE);
 
 session_start();
 
-echo 'Welcome to page authenticate 8<br>';
+echo 'Welcome to page authenticate 9<br>';
 
 
 if (file_exists(ENV_FILE_PATH)) {
@@ -41,7 +41,10 @@ if (mysqli_connect_errno()) {
     echo "Connected successfully";
 }
 
-function readEnvLocal() {
+mysqli_close($conn);
+
+function readEnvLocal() 
+{
 	$envFileContent = file_get_contents(ENV_FILE_PATH);
 
 	// Parse the contents of the .env file
@@ -60,6 +63,13 @@ function readEnvLocal() {
 		}
 	}
 	
+}
+
+function readEnvCloud()
+{
+foreach ($_ENV as $key => $value) {
+    echo "$key: $value\n";
+}
 }
 
 ?>
