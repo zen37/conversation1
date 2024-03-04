@@ -14,6 +14,7 @@ if (file_exists(ENV_FILE_PATH)) {
 	readEnvLocal();
 } else {
     echo 'Running on a cloud server';
+	readEnvCloud();
 }
 
 $CERT_PATH 		= getenv("CERT_PATH");
