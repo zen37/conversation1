@@ -6,7 +6,7 @@ ini_set('display_errors', TRUE);
 
 session_start();
 
-echo 'Welcome to page authenticate 9<br>';
+echo 'Welcome to page authenticate 11<br>';
 
 
 if (file_exists(ENV_FILE_PATH)) {
@@ -28,7 +28,7 @@ $DATABASE_PASS 	= getenv("DB_PASS");
 $conn = mysqli_init();
 
 // Set SSL options
-mysqli_ssl_set($conn, NULL, NULL, $CERT_PATH, NULL, NULL);
+mysqli_ssl_set($conn, NULL, NULL, NULL, NULL, NULL);
 
 // Connect to MySQL database
 mysqli_real_connect($conn, $DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
