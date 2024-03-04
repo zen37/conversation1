@@ -18,7 +18,7 @@ if (file_exists(ENV_FILE_PATH)) {
 
 $CERT_PATH 		= getenv("CERT_PATH");
 
-$DATABASE_HOST 	= getenv("DB_HOST");
+$DATABASE_HOST 	= getenv("APPSETTING_DB_HOST");
 $DATABASE_NAME	= getenv("DB_NAME");
 $DATABASE_USER 	= getenv("DB_USER");
 $DATABASE_PASS 	= getenv("DB_PASS");
