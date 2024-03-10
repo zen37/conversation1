@@ -6,7 +6,7 @@ require_once('include/connect.php');
 
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: index.html');
+	header('Location: index.php');
 	exit;
 }
 
@@ -15,7 +15,7 @@ $stmt = $conn->prepare('SELECT password, email FROM accounts WHERE id = ?');
 if (!$stmt) {
 	echo $conn->error;
     exit('Failed to prepare statement: ' . $conn->error);
-} 
+}
 
 // In this case we can use the account ID to get the account info.
 $stmt->bind_param('i', $_SESSION['id']);
