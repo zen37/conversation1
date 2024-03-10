@@ -8,12 +8,8 @@ define('BASE_PATH', dirname(__FILE__));
 // Define the path to the .env file
 define('ENV_FILE_PATH', BASE_PATH . '/.env');
 
-// Check if the .env file exists
 if (file_exists(ENV_FILE_PATH)) {
-    echo 'Running on localhost<br>';
     readEnvLocal();
-} else {
-    echo 'Running on a cloud server<br>';
 }
 
 //$CERT_PATH      = getenv("CERT_PATH");
