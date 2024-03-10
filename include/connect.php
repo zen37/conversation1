@@ -30,9 +30,6 @@ mysqli_real_connect($conn, $DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATA
 if (mysqli_connect_errno()) {
     // If there is an error with the connection, display a user-friendly message
     die('Failed to connect to MySQL: ' . mysqli_connect_error());
-} else {
-    // Connection successful
-    echo "Connected successfully<br>";
 }
 
 // Function to read the contents of the .env file and set environment variables
