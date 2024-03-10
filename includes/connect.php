@@ -1,5 +1,7 @@
 <?php
 ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+error_reporting(E_ALL);
 
 // Define the base path for the script
 define('BASE_PATH', dirname(__FILE__));
